@@ -1,8 +1,6 @@
-*
-
-!wp-config.example.php
+wp-*
+wp-content/plugins*
+wp-content/themes/twentynineteen*
+wp-content/themes/twentyseventeen*
+wp-content/themes/twentytwenty*
 !wp-content/
-!wp-content/plugins
-!wp-content/themes
-wp-content/themes/*
-!wp-content/themes/hc-bootstrap/
