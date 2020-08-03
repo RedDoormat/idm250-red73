@@ -1,1 +1,7 @@
-IDM250
+<?php
+    get_header();
+?>
+
+<?php
+    get_footer();
+?>
