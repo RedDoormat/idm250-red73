@@ -1,9 +1,98 @@
 body {
-    background-image: url(content/background.jpg);
+    background-image: url(images/background.jpg);
     background-size: cover;
+    margin: 0;
 }
 
-.header-content {
-    display: flexbox;
+
+/* Header Stuff */
+/* .header-content {
+    display: flex;
     flex-direction: column;
+} */
+
+#logo {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 5px 10px rgb(255, 255, 255, 0.25);
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-portfolio_header-container {
+    text-align:center;
+    margin:1rem 0;
+    font-family: futura-pt, sans-serif;
+}
+
+#menu-portfolio_header, .menu-item {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+#menu-portfolio_header {
+    list-style:none;
+    padding:0;
+}
+
+.menu-item {
+    background-color: white;
+    padding:0.15rem;
+    border-style: solid none solid none;
+}
+
+.menu-portfolio_header-container a {
+    text-decoration: none;
+    font-size: 2rem; 
+    color: rgb(0, 0, 0); 
+    display:block;
+    padding: 1rem;
+    transition: .6s;
+}
+
+.menu-portfolio_header-container a:hover {
+    background:lightgrey;
+    text-decoration: underline;
+    border-style: none solid none solid;
+}
+
+@media screen and (max-width: 25em) {
+    #logo {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 25em) {
+    .menu-portfolio_header-container .menu-item {
+        width:33%;
+        float:left;
+    }
+
+    #logo {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 30em) {
+    .menu-portfolio_header-container .menu-item {
+        width:33%;
+    }
+
+    #logo {
+        width: 10%;
+    }
+}
+/* END HEADER STUFF */
+
+.orange {
+    clear: both;
+    background-color: orange;
+    height: 3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

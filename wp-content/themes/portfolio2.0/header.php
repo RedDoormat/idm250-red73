@@ -7,10 +7,13 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class() ?>>
+<link rel="stylesheet" href="https://use.typekit.net/nmh6qge.css">
 <header class="header">
     <div class="header-content">
-        <img class="logo" src="content/red73_new-logo_web.png" alt="Logo for Reid's website.">
-
+        <div id="logo-container">
+            <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo for Reid Dumont's website." />
+        </div>
+        
         <?php
             wp_nav_menu([
                 'theme_location' => 'primary_menu'
