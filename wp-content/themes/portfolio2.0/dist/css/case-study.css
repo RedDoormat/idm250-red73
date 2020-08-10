@@ -1,0 +1,75 @@
+* { /*Helps with math of margin and padding*/
+    box-sizing: border-box;
+}
+
+.container-single {
+    background-color: rgba(255, 255, 255, 0.897);
+}
+
+.information-dump {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: futura-pt, sans-serif;
+}
+
+.page-builder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a.wp-block-button__link:hover {
+    background-color: rgb(255, 207, 118);
+    color: rgb(20, 20, 20);
+}
+
+@media screen and (min-width: 1050px) {
+    .wp-block-image {
+        max-width: 50vw;
+        min-width: 25vw;
+        padding: 1rem;
+        object-fit: scale-down contain;
+        margin: 0;
+    }
+
+    p {
+        width: 50vw;
+        font-size: 1.2rem;
+    }
+}
+
+/*Tablet Layout*/
+@media screen and (max-width: 1049px) {
+    .wp-block-image {
+        max-width: 50vw;
+        min-width: 30vw;
+        padding: 1rem;
+        object-fit: scale-down contain;
+        margin: 0;
+    }
+
+    p {
+        width: 50vw;
+        font-size: 1rem;
+    }
+}
+
+/*MOBILE MODE*/
+@media screen and (max-width: 640px) {
+    .wp-block-image {
+        max-width: 90vw;
+        min-width: 60vw;
+        padding: 1rem;
+        object-fit: scale-down contain;
+        margin: 0;
+    }
+
+    p {
+        width: 80vw;
+        font-size: 1rem;
+    }
+}

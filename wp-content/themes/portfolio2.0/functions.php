@@ -1,10 +1,9 @@
 <?php
+//Theme Requirements
+require get_template_directory() . '/lib/required.php';
 
-wp_enqueue_style( 'style', get_stylesheet_uri() );
+//Theme Initialization
+require get_template_directory() . '/lib/setup.php';
 
-function register_theme_navigation() {
-    register_nav_menus([
-        'primary_menu' => 'Primary Menu'
-    ]);
-}
-add_action('after_setup_theme', 'register_theme_navigation');
+//Register custom post type
+require get_template_directory() . '/lib/custom-post-type.php';

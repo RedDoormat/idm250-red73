@@ -92,7 +92,6 @@ body {
     clear: both;
     background-color: orange;
     height: 3rem;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }

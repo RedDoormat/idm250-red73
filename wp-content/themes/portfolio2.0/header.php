@@ -7,7 +7,6 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class() ?>>
-<link rel="stylesheet" href="https://use.typekit.net/nmh6qge.css">
 <header class="header">
     <div class="header-content">
         <div id="logo-container">

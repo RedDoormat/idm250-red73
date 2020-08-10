@@ -6,6 +6,7 @@
         <div class="information-dump">
           <h1 class="post_title js-blog-heading"><?php the_title(); ?></h1>
 
+          <?php the_post_thumbnail(); ?>
 
           <div class="page-builder">
             <?php the_content(); ?>
