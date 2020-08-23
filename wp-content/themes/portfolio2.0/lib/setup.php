@@ -11,6 +11,9 @@ function include_css_files() {
 
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('case-study-css', get_template_directory_uri() . '/dist/css/case-study.css');
+    wp_enqueue_style('404-css', get_template_directory_uri() . '/dist/css/404.css');
+    wp_enqueue_style('archive-css', get_template_directory_uri() . '/dist/css/archive.css');
+    wp_enqueue_style('search-css', get_template_directory_uri() . '/dist/css/search.css');
 }
 add_action('wp_enqueue_scripts', 'include_css_files');
 

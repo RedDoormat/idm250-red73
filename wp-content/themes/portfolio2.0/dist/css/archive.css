@@ -1,0 +1,40 @@
+.container-archive {
+    background-color: rgba(255, 255, 255, 0.897);
+    font-family: futura-pt, sans-serif;
+    padding: 0 10rem;
+}
+
+.archive__posts {
+    display: flex;
+   flex-flow: wrap;
+}
+
+.article-block {
+    width: 38vw;
+    margin: 0 .5vw;
+}
+
+@media screen and (min-width: 1050px) {
+
+}
+
+@media screen and (max-width: 1049px) {
+    .article-block {
+        width: 60vw;
+        margin: 0 1rem;
+    }
+    .container-archive {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .article-block {
+        width: 90vw;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .container-archive {
+        padding: 0 1rem 0 1rem;
+    }
+}

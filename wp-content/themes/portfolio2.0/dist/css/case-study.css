@@ -27,12 +27,23 @@ a.wp-block-button__link:hover {
     color: rgb(20, 20, 20);
 }
 
+ul.post-categories {
+    margin: 0;
+    list-style: none;
+    marker: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
 @media screen and (min-width: 1050px) {
     .wp-block-image {
         max-width: 50vw;
         min-width: 25vw;
         padding: 1rem;
-        object-fit: scale-down contain;
         margin: 0;
     }
 
@@ -48,7 +59,6 @@ a.wp-block-button__link:hover {
         max-width: 50vw;
         min-width: 30vw;
         padding: 1rem;
-        object-fit: scale-down contain;
         margin: 0;
     }
 
@@ -64,7 +74,6 @@ a.wp-block-button__link:hover {
         max-width: 90vw;
         min-width: 60vw;
         padding: 1rem;
-        object-fit: scale-down contain;
         margin: 0;
     }
 

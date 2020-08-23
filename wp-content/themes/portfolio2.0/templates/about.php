@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: About
+*/
+?>
 <?php get_header();?>
 <main class="main-content">
   <?php while (have_posts()) : the_post(); ?>
@@ -5,11 +10,11 @@
         <!-- Main Content -->
         <div class="column column-main">
           <h1 class="post_title"><?php the_title(); ?></h1>
+          <?php the_post_thumbnail(); ?>
           <div class="page-builder">
             <?php the_content(); ?>
           </div>
         </div>
-        
     </div>
   <?php endwhile; ?>
 </main>
